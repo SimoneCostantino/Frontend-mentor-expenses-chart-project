@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frontend Mentor | Expenses chart component</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="expense-chart.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="expenses-chart.js"></script>
+
+</head>
+
+<body>
+  <div class='container'>
+    <div class='upper-block-container'>
+
+      <div class="left-section-upper-block">
+          <p class="title-upper-block">
+          My balance
+          </p>
+          <p class="balance-upper-block">
+            $200.20
+          </p>
+      </div>
+
+      <img src="images/logo.svg" class="logo-upper-block">
+
+    </div>
+
+    <div class="lower-block-container">
+      <div class="title-lower-block">
+        Spending - Last 7 days
+      </div>
+
+
+      <div class="chart-visualization">
+        <canvas id="myChart">ciao</canvas>
+      </div>
+
+      <div class="lower-block-divisor">
+      </div>
+
+
+      <div class="lower-box-container">
+
+        <div
+          class="right-section-total-lower-container">
+          <p class="total-this-month-title">Total this month</p> 
+          <p class="total-this-month-number"></p>
+        </div>
+
+        <div
+          class="left-section-comparison--lower-container">
+          <p class="comparison-percentage">+2.4%</p> 
+          <p class="comparison-string">from last month</p>
+        </div>
+
+        </div>
+
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.linkedin.com/in/simonecostantino/">Simone Costantino</a>.
+      </div>
+    </div>
+  </div>
+</body>
+
+
